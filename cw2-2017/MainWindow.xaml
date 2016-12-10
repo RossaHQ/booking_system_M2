@@ -1,0 +1,38 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="cw2_2017.MainWindow"
+        Title="MainWindow" Height="357.485" Width="562.726">
+    <Grid Margin="0,0,-52,-4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="301*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="62*"/>
+            <ColumnDefinition Width="241"/>
+            <ColumnDefinition Width="167"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="9"/>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition Width="0"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn_save_cust" Content="Create Customer" HorizontalAlignment="Left" Margin="81,162,0,0" VerticalAlignment="Top" Width="117" Height="31" Grid.Column="1" FontSize="14" Click="btn_save_Click"/>
+        <Button x:Name="btn_quit" Content="Quit" HorizontalAlignment="Left" Margin="11,226,0,0" VerticalAlignment="Top" Width="76" Height="33" FontSize="13" Click="btn_quit_Click" Grid.ColumnSpan="2"/>
+        <Label Grid.ColumnSpan="2" Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,61,0,0" FontSize="13" Height="27" Width="47"/>
+        <Label Grid.ColumnSpan="2" Content="Address:" HorizontalAlignment="Left" Margin="24,101,0,0" VerticalAlignment="Top" FontSize="14" Height="29" Width="63"/>
+        <Label Grid.ColumnSpan="2" Content="Customer Details" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,25,0,0" FontSize="14" Height="29" Width="130"/>
+        <TextBox x:Name="txt_name" HorizontalAlignment="Left" Height="23" Margin="69,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Grid.Column="1"/>
+        <TextBox x:Name="txt_address" HorizontalAlignment="Left" Height="23" Margin="69,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Grid.Column="1"/>
+        <Button x:Name="btn_booking" Content="Create Booking" HorizontalAlignment="Left" Margin="81,226,0,0" VerticalAlignment="Top" Width="117" Height="33" FontSize="13" Click="btn_booking_Click" Grid.Column="1"/>
+        <ListBox x:Name="lst_box_cust" Grid.ColumnSpan="4" Grid.Column="2" HorizontalAlignment="Left" Height="98" Margin="21,41,0,0" VerticalAlignment="Top" Width="192" SelectionChanged="lst_box_cust_SelectionChanged" />
+        <Button x:Name="btn_delete_cust" Content="Delete Customer" Grid.Column="2" HorizontalAlignment="Left" Margin="65,226,0,62" Width="111" RenderTransformOrigin="0.067,-0.3" Click="btn_delete_cust_Click" FontSize="13" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="txt_cust_key" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="65,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.495,1.783" Grid.ColumnSpan="3"/>
+        <Label Content="Your Customer Details:" Grid.Column="2" HorizontalAlignment="Left" Margin="42,10,0,0" VerticalAlignment="Top" Width="133" Grid.ColumnSpan="3" Height="26"/>
+        <Label Content="*Enter Customer Reference:" Grid.Column="2" HorizontalAlignment="Left" Margin="33,149,0,0" VerticalAlignment="Top" Height="26" Width="171" Grid.ColumnSpan="4"/>
+        <Label Content="*Enter the customer reference of the customer &#xD;&#xA;you wish to delete." Grid.Column="1" HorizontalAlignment="Left" Margin="217,266,0,0" VerticalAlignment="Top" Height="48" Width="263" Grid.ColumnSpan="5"/>
+    </Grid>
+</Window>

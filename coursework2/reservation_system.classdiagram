@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="87a9a5f6-b5fa-4217-a261-660da4098f2e" name="reservation_system" linkedPackageId="03521282-46bd-4ec0-9c8c-5c749a6c0012" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c986f19f-944d-4305-a8d3-70e830273bc1" name="Booking" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="048f255c-d1c4-46e5-830f-95d3dd8f4924" />
+        <targetEnds>
+          <association Id="bd958ffe-7c01-4f5e-a735-92bfc8a6fecf" isDerived="false" sourceEndRoleName="Booking" targetEndRoleName="Guest" isLeaf="false" name="1:M" isAbstract="false">
+            <classMoniker Id="3017ea4d-58ec-4473-9fd5-ca78fd937db3" LastKnownName="Guest" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb031a7e-2e55-4aa7-8937-de9b03dc8797" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2fbb8992-0768-43f5-b93b-fea0f76b677f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ee36b30e-d6ba-457b-9fac-50662ba3d6a8" name="Guest" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1ea536e7-963b-4f28-93c2-92d9ea880c99" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9aad963c-9be5-4d54-8257-9261c2ec43c8" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="ff066e5b-b312-4b50-8ad2-0983fdafff17" name="get_arv_date" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0ab2ac3a-020b-46f4-b5b9-a57ec985333c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="740180d2-e710-4755-abd7-7b522b19c9f4" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="86bba560-e654-4ea5-98c4-02c89a7e14dc" name="get_dep_date" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ec2748f2-30d9-41e6-84fc-890a6436544b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="cf886681-5cff-4f9d-ae3e-b73064f1bbe1" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="d1085775-af14-4b6e-ae17-4f7bf84ad983" name="get_booking_ref" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b9f13d0d-91d3-41c2-8f9a-32976f296966" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="efaa6c82-1644-47a9-8bac-55bcb63158a5" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="8e8450dd-dfe7-4958-bd39-1d294b97ab49" name="Arv_date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a25cfbbc-4a3f-4714-87e0-e1c73bfc22dd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8579d774-0439-4308-9968-87a3505cbd1b" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="4684d011-8841-4f7d-9026-90e1c8eb1cb3" name="Dep_date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="036c969d-748e-43d0-9117-d4c5ad66992e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8579d774-0439-4308-9968-87a3505cbd1b" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+          <property Id="eeb2ea2c-34ef-4d46-b2b5-3b9bc7759417" name="Book_Ref" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b7478dc8-8942-461b-af01-9fdeaa2bebaa" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f45e1157-7a18-4406-8a6c-b31301dc7f14" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+          <property Id="9b46e893-6d40-47fa-b408-5202c123f9b0" name="Book_Dict" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="970acef9-6830-4adb-8dba-d0732ea71020" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e1c5c060-6b6e-4613-8e2b-6ee8c9a156db" LastKnownName="Dictionary" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3f411956-53e5-455f-a143-26edfdc85da1" name="AddBooking" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e2a07dac-652d-4bdc-bfe7-25503a4588d7" />
+          </operation>
+          <operation Id="fd2f05f2-32f5-4363-8299-557f457a6a90" name="DelBooking" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2f4d64a1-1ba3-4a9c-95d7-191ae2195cb2" />
+          </operation>
+          <operation Id="9d265f74-3f19-45ce-820a-253119691bba" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c5ea489a-9f33-4e10-bc3f-3822a7c9d20c" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3017ea4d-58ec-4473-9fd5-ca78fd937db3" name="Guest" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8b328157-908c-4e20-bc68-bf623d70bf12" />
+        <ownedAttributesInternal>
+          <property Id="a7d1cffe-7c33-437c-b9e5-fa923cf55b20" name="Age" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="66fdaa8a-74c3-4a58-b392-44f8a5867bcb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="aa107c3f-0bc3-4995-9023-1b2c19321c78" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="ca5781c6-e070-4146-b002-d4619fb8fb7e" name="get_pass_num" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c3e8b2a-235f-441c-9d7e-9d808f526f18" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="602cc066-d05e-4fe2-9da7-607908caef93" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="66f62933-d8fe-441e-bbef-8b58855ad729" name="Pass_Num" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7de6684d-9554-4da4-9fc9-d528f3fc360a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="67dbfe8b-9e28-4d1f-b9a7-1c1e43f7289f" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="5bce4516-0e7c-4944-82e8-a1385bb0e475" name="Guest_Dict" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="005e590f-8d52-4c7a-ac03-62d10af7668f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1a836cbe-7fa7-4284-b5ab-e2e5edcc517c" LastKnownName="Dictionary" />
+            </type_NamedElement>
+          </property>
+          <property Id="48aeafb3-e3e9-4dd1-854d-b8aa6dd8e163" name="Book_Ref" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="63bf6638-3ea1-41af-834c-8c5142d3a606" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fdeeee53-9514-4471-8a53-eebc8fcd6800" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="78824040-ea19-4c8c-a2b7-c8c3197f64c6" name="get_age" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="389cf99d-dfc2-45a7-9853-83cde9829064" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f45e1157-7a18-4406-8a6c-b31301dc7f14" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+          <property Id="48253bfc-e1f6-41b3-9cd8-e783efb5e0ce" name="get_book_ref" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2e475b24-54c9-44c2-bb6c-bb3b905fc199" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f45e1157-7a18-4406-8a6c-b31301dc7f14" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+          <property Id="ea1ff2ab-beba-4c9e-8116-be3f715979ec" name="get_name" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9f8652b3-aa1f-42e8-b516-28b2aab41c01" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0d642212-0de1-4d9b-bd71-54a6ecd2f7a9" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0381364a-c590-40bc-b706-7de21b13ca3b" name="DelGuest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4d52cfcf-791c-4cd6-a7ad-8e5be6cef511" />
+          </operation>
+          <operation Id="9278a097-c9c5-461a-9531-46b8a9ebd860" name="AddGuest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="88f750fe-de10-4993-bae6-a85620ce7691" />
+          </operation>
+          <operation Id="2f7ed874-be4a-4826-9d3d-864adb09ce74" name="GetBookingCost" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2c269e03-c1d8-4111-b29c-224616e4d86d" />
+          </operation>
+          <operation Id="f5963ffe-e7ee-48e9-b4aa-3d1a8f39016e" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="af99b0e2-f704-4929-beca-3de568164247" />
+          </operation>
+          <operation Id="b8769dd5-fb4f-4ac3-b78c-8353b6cae56e" name="CountGuests" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e61e83a1-6112-4000-af5b-db5f51cc24a5" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="54d1769c-b75f-4a92-a99d-883c7ed0d0a4" name="Customer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="720ce3bd-539d-46c5-ac81-f244876b6e63" />
+        <targetEnds>
+          <association Id="8e6351b4-bfda-4987-a115-e59f8531569c" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Booking" isLeaf="false" name="1:M" isAbstract="false">
+            <classMoniker Id="c986f19f-944d-4305-a8d3-70e830273bc1" LastKnownName="Booking" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81aa6661-65fe-4204-bc54-91f3e48ac8c3" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9ff4c12a-bc7b-478b-8582-8eda3eeb7e4c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cacdcd66-a89f-4415-bd8d-afeb9b168078" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b6ad5e57-b024-4050-9605-0696039b8efa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="793f31e5-ba48-482d-8484-b60811cd8ef0" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="25d01617-b94b-433c-8981-0ecce047ef80" name="Cust_Ref" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eb3ef0c1-32f3-452f-b5fb-ed649f8bd8d9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9967bdd1-bd48-4a7f-bb80-74cf7933e5eb" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="8ebfc574-3995-489f-a743-85fedf86476a" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="64b6d221-1037-493f-9d5e-22b4835e614e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dbc743bf-7efd-45fa-a3a5-2d0d5847878b" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="82934ba2-e661-4dce-8f4a-0892defeb70f" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2658e5c0-b679-4d22-abb4-5c35ed6b93b6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a2f7dc54-7e83-4aff-a91a-17b9ed9c408a" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="8d06b152-0f08-40cd-ac8a-b9ad12d932a4" name="get_address" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cbddf7ab-27d6-4042-a1cc-ab4e6e9dfb80" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a0c134e9-1cf3-4e39-8123-b364b0011f35" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="4d0df277-19f7-4400-bb6f-619876262f6d" name="get_name" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="295a7db5-707c-4b22-8693-5726436bfca2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0d642212-0de1-4d9b-bd71-54a6ecd2f7a9" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="68ed2144-5d52-4e13-b2e2-6a35cc510af5" name="get_cust_ref" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a4834162-2db8-44ad-a045-2ffdbdbd1c43" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f45e1157-7a18-4406-8a6c-b31301dc7f14" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+          <property Id="6b245615-519f-4423-ada3-50506a1d7879" name="Cust_Dict" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0c88668c-ae57-41f8-9069-b277e836965b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1a836cbe-7fa7-4284-b5ab-e2e5edcc517c" LastKnownName="Dictionary" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5f8aa3a2-6b2e-4ca4-ae58-f1cf136730bb" name="AddCust" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d52fa3b9-6313-444b-adec-34f75c87a2ed" />
+          </operation>
+          <operation Id="0cc566ae-2512-494f-acf9-ca3da8b9706c" name="DelCust" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7522a7ff-e542-49d5-adc9-e8f067317e6b" />
+          </operation>
+          <operation Id="720c7dc3-f84e-4f98-b30d-ffcfb69a27e8" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ba9d360a-0d49-494b-a724-82a9f0d804ec" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="fdeeee53-9514-4471-8a53-eebc8fcd6800" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0d642212-0de1-4d9b-bd71-54a6ecd2f7a9" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="aa107c3f-0bc3-4995-9023-1b2c19321c78" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="67dbfe8b-9e28-4d1f-b9a7-1c1e43f7289f" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="602cc066-d05e-4fe2-9da7-607908caef93" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f45e1157-7a18-4406-8a6c-b31301dc7f14" name="Int" isAbstract="false" isLeaf="false" cachedFullName="Int">
+        <elementDefinition Id="d4d129e3-a594-465b-a6ce-b1b142eb9d08" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8579d774-0439-4308-9968-87a3505cbd1b" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="aa9c5124-63a0-4314-99d5-cc71edb079da" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="740180d2-e710-4755-abd7-7b522b19c9f4" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="aa9c5124-63a0-4314-99d5-cc71edb079da" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cf886681-5cff-4f9d-ae3e-b73064f1bbe1" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="aa9c5124-63a0-4314-99d5-cc71edb079da" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="efaa6c82-1644-47a9-8bac-55bcb63158a5" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dbc743bf-7efd-45fa-a3a5-2d0d5847878b" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9967bdd1-bd48-4a7f-bb80-74cf7933e5eb" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a2f7dc54-7e83-4aff-a91a-17b9ed9c408a" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a0c134e9-1cf3-4e39-8123-b364b0011f35" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1a836cbe-7fa7-4284-b5ab-e2e5edcc517c" name="Dictionary" isAbstract="false" isLeaf="false" cachedFullName="Dictionary">
+        <elementDefinition Id="7e9834b9-dac0-44d2-bc5d-f2f41ea741c8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e1c5c060-6b6e-4613-8e2b-6ee8c9a156db" name="Dictionary" isAbstract="false" isLeaf="false" cachedFullName="Dictionary">
+        <elementDefinition Id="7e9834b9-dac0-44d2-bc5d-f2f41ea741c8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9db81fff-a5a6-4b4b-9118-bf94ad7ac1da" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6a795dbc-0163-4302-b965-b5b75d48c6e7" />
+        <targetEnds>
+          <association Id="fd621c55-4d9d-4b6c-a198-0ad0c71ca241" isDerived="false" sourceEndRoleName="MainWindow" targetEndRoleName="BookingWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="93e3fdea-e895-46e0-b260-ff4329e9b309" LastKnownName="BookingWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0584aba7-f8be-485d-a540-759cd045370d" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d3bba3f4-1fc6-473f-b656-c3f446a11ac2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d114398a-ec1e-4455-bdab-bbd361557474" name="BookingWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="015ea64b-e51d-4306-881d-21dd3b8b22d8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="acdba85f-ea0a-4ce0-938c-a691361cf082" />
+          </association>
+          <association Id="1937726c-4afc-4f9c-ad3d-f23f2c2fd36c" isDerived="false" sourceEndRoleName="MainWindow" targetEndRoleName="Customer" isLeaf="false" isAbstract="false">
+            <classMoniker Id="54d1769c-b75f-4a92-a99d-883c7ed0d0a4" LastKnownName="Customer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c57f373-d22c-47f2-9917-260df12dedcf" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4393677e-3512-48c4-8f16-1e8b3fa2cd32" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="48c7bb1b-3d85-448e-807d-615023c5dc01" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f914d8a2-0b13-47e4-b105-60f42eca5ba0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1865c130-1405-482b-9dd9-f8c6bf5739e3" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="93e3fdea-e895-46e0-b260-ff4329e9b309" name="BookingWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="505b966b-839b-4ea6-8b1c-7718d33dc1a7" />
+        <targetEnds>
+          <association Id="f3034b59-392a-46fb-8740-6c2f4d047dff" isDerived="false" sourceEndRoleName="BookingWindow" targetEndRoleName="InvoiceWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="61907af6-cb60-406b-81e0-1b5dd9596bc3" LastKnownName="InvoiceWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="51b6b27d-fc2f-4b35-abb6-557536786f2a" name="BookingWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7766c86e-9fa6-4380-95c6-a3bc2ccc2ac8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c9358513-774c-4014-afe8-ba87bd7690a4" name="InvoiceWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3d0ce859-7a57-4c7e-88a5-2d7cf6fc1409" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5c2126e9-618c-4507-91b1-c6b6476c5621" />
+          </association>
+          <association Id="1b9039fb-46b4-49fb-9635-d643a79503b7" isDerived="false" sourceEndRoleName="BookingWindow" targetEndRoleName="Booking" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c986f19f-944d-4305-a8d3-70e830273bc1" LastKnownName="Booking" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a047486-93c9-4ca8-80a9-d4b67b7646d9" name="BookingWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9080cf05-bbcc-4099-a780-393123b6213d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e4c57429-2b9b-4460-8c2c-a7fbee6220d0" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4760279a-3b42-4a16-aadc-c110afa0fbf5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ab162d75-2bca-4f5b-8233-5bcaa3d3734f" />
+          </association>
+          <association Id="04af8fbd-6681-456b-929a-a78d3448d644" isDerived="false" sourceEndRoleName="BookingWindow" targetEndRoleName="Guest" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3017ea4d-58ec-4473-9fd5-ca78fd937db3" LastKnownName="Guest" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf72270c-13d9-4585-b17a-d9576da3d398" name="BookingWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8b71535a-f6ab-487f-b678-9ec6f8ac4bac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d772b0a4-c8ed-43fe-a9ac-7159e6405a25" name="Guest" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cb35bfd1-6060-4da4-aefa-c91ff46a2d31" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="147becd9-dacb-4b3f-bdb9-cc10749254d3" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="61907af6-cb60-406b-81e0-1b5dd9596bc3" name="InvoiceWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f7b34bfe-b987-4a76-a40f-9ebb75e10ca4" />
+        <ownedAttributesInternal>
+          <property Id="f7be55c4-1aae-4029-8bf3-909a0145ff7b" name="inv_details" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ad4c7669-097c-41c4-84ed-7572817356d7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0d642212-0de1-4d9b-bd71-54a6ecd2f7a9" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="03521282-46bd-4ec0-9c8c-5c749a6c0012" name="coursework2">
+    <elementDefinition Id="c66f1a39-aefd-4ab5-abfe-8b31a3d93b31" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9fcd5954-930f-4b15-8fca-633b6a38ecef">
+        <profileInstance Id="dc71bd94-5506-4e28-8e0c-c2d49689dd30" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="af0b8246-d4eb-47e7-98e6-2c881955102b">
+        <profileInstance Id="aeb64ad1-e66a-4a28-80fc-115bd94bf55d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

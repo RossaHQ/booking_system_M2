@@ -1,0 +1,11 @@
+﻿<Window x:Class="cw2_2017.invoice_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="invoice_window" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="btn_back_form" Content="Back" HorizontalAlignment="Left" Margin="107,228,0,0" VerticalAlignment="Top" Width="75" FontSize="13"/>
+        <Label Content="Total cost:" HorizontalAlignment="Left" Margin="107,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.336,0.157" FontSize="14"/>
+        <Label x:Name="lbl_cost" Content="Label" HorizontalAlignment="Left" Margin="121,98,0,0" VerticalAlignment="Top" FontSize="13"/>
+
+    </Grid>
+</Window>
